@@ -1,3 +1,16 @@
 <html>
-<p> Hello world </p>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script>
+$().ready(function(){
+    $.getJSON( "./data.json", function( data ) {
+    console.log(data);
+    $("#test").html(data["Team 7"]);
+  });
+});
+</script>
+
+<body>
+<p id="test"> Hello world </p>
+</body>
 </html>
