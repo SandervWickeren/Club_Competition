@@ -76,11 +76,17 @@ def rank():
     soup = get_webpage(link)
     return get_ranking(soup)
 
+def createFile(name, string):
+    with open(name, 'w') as jsonfile:
+        json.dump(string, jsonfile, ensure_ascii=False, indent=4)
+
+
 def dumpjson():
     combined_dict = {**rank(), **match()}
     data = ({"Team 7": [combined_dict]})
     jstr = json.dumps(data, indent=4)
-    print(jstr)
+    createFile("data.json", data)
+    print("Succes!")
 
 dumpjson()
 
