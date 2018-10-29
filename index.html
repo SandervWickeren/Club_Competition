@@ -2,15 +2,34 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 <script>
+var test;
+
 $().ready(function(){
     $.getJSON( "./data.json", function( data ) {
     console.log(data);
-    $("#test").html(data["Team 7"]);
+    test = data["Team 7"][0]['matches'];
+    console.log(data["Team 7"][0]);
+    $("#test").html(data);
+    loadmatches();
   });
 });
+
+function loadmatches(){
+    var table = document.getElementById('test');
+    var tableContent = document.getElementById('test').innerHTML;
+    var tableContent = '';
+
+    for (var i=0; i<test.length;i++) {
+            tableContent += '<div id="tableDiv"><table><tr>' + test[i].home + " - " + test[i].away + " ::--:: " + test[i].score +  '</tr>';
+            console.log(test[i]);
+    }
+
+    tableContent += '</table></div>';
+    table.innerHTML = tableContent;
+}
 </script>
 
 <body>
-<p id="test"> Hello world </p>
+<div id="test"></div>
 </body>
 </html>
