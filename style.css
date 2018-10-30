@@ -12,7 +12,7 @@ body {
 	width: 100%;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-	font-size: 40px;
+	font-size: 2.5em;
 }
 
 @media only screen and (min-width: 1300px) {
@@ -41,13 +41,13 @@ body {
 
 .teamname {
 	margin: 0;
-	font-size: 15px;
+	font-size: 0.93em;
 	color: white;
 }
 
 .teamdivision {
 	margin: 0;
-	font-size: 12px;
+	font-size: 0.93em;
 	color: white;
 }
 
@@ -91,7 +91,7 @@ table {
 	opacity: 0.8;
 	text-decoration: none;
 	color: white;
-	font-size: 12px;
+	font-size: 0.93em;
 }
 
 #topteam {
