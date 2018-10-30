@@ -29,10 +29,10 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .team {
-	width: 90%;
+	width: 96%;
   }
 
-  table {
+/*  table {
   	font-size: 17px;
   }
 
@@ -42,7 +42,7 @@ body {
 
   .teamdivision {
   	font-size: 17px;
-  }
+  }*/
 }
 
 .team {
