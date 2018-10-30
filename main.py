@@ -90,6 +90,13 @@ def dumpjson():
 
 dumpjson()
 
+# Todo:
+#  Lowercase except first letter
+#  Lookup every team
+#  Automically move json file to github
+#  Daily checks.
+#  What if no internet connection?
+
 
 
 

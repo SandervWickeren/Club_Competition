@@ -1,5 +1,6 @@
 <html>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <script>
 var test;
@@ -10,9 +11,31 @@ $().ready(function(){
     test = data["Team 7"][0]['matches'];
     console.log(data["Team 7"][0]);
     $("#test").html(data);
-    loadmatches();
+    $(".table").html(genTable(data["Team 7"][0]["table"]));
+    //loadmatches();
   });
 });
+
+// Takes as input a json object containing the table standings
+// Returns the html needed to show the table.
+function genTable(obj){
+    var tableContent = "<table cellspacing='0' cellpadding='0'><tr><th></th><th></th><th>P</th><th>G</th></tr>";
+    var start = ""
+
+    for (var i=0; i<obj.length;i++) {
+
+        if (obj[i].team.toLowerCase().includes("hillegom")) {
+            start = "<tr id='homeclub'><td>";
+        } else {
+            start = "<tr><td>";
+        };
+
+        tableContent += start + obj[i].rank + "</td><td id='tableClubname'>" + obj[i].team.toLowerCase() + "</td><td>" + obj[i].points + "</td><td>" + obj[i].played + "</td></tr>";
+    };
+
+    return tableContent;
+
+}
 
 function loadmatches(){
     var table = document.getElementById('test');
@@ -31,5 +54,35 @@ function loadmatches(){
 
 <body>
 <div id="test"></div>
+<div class="team">
+    <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie</p></div>
+    <div class="table">test</div>
+    <div class="nextgame">test2</div>
+</div>
+<div class="team">
+    <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie</p></div>
+    <div class="table">test</div>
+    <div class="nextgame">test2</div>
+</div>
+<div class="team">
+    <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie</p></div>
+    <div class="table">test</div>
+    <div class="nextgame">test2</div>
+</div>
+<div class="team">
+    <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie</p></div>
+    <div class="table">test</div>
+    <div class="nextgame">test2</div>
+</div>
+<div class="team">
+    <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie</p></div>
+    <div class="table">test</div>
+    <div class="nextgame">test2</div>
+</div>
+<div class="team">
+    <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie</p></div>
+    <div class="table">test</div>
+    <div class="nextgame">test2</div>
+</div>
 </body>
 </html>
