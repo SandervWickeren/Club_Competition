@@ -27,9 +27,9 @@ function genTable(obj){
     for (var i=0; i<obj.length;i++) {
 
         if (obj[i].team.toLowerCase().includes("hillegom")) {
-            start = "<tr id='homeclub'><td>";
+            start = "<tr id='homeclub'><td id='rank'>";
         } else {
-            start = "<tr><td>";
+            start = "<tr><td id='rank'>";
         };
 
         tableContent += start + obj[i].rank + "</td><td id='tableClubname'>" + obj[i].team.toLowerCase() + "</td><td>" + obj[i].points + "</td><td>" + obj[i].played + "</td></tr>";

@@ -31,6 +31,18 @@ body {
   .team {
 	width: 90%;
   }
+
+  table {
+  	font-size: 20px;
+  }
+
+  .teamname {
+  	font-size: 20px;
+  }
+
+  .teamdivision {
+  	font-size: 17px;
+  }
 }
 
 .team {
@@ -41,13 +53,13 @@ body {
 
 .teamname {
 	margin: 0;
-	font-size: 0.93em;
+	font-size: 15px;
 	color: white;
 }
 
 .teamdivision {
 	margin: 0;
-	font-size: 0.93em;
+	font-size: 12px;
 	color: white;
 }
 
@@ -58,7 +70,7 @@ body {
 }
 
 #tableClubname {
-	width: 140px;
+	width: 40%;
 	max-width: 140px;
 	overflow: hidden;
 }
@@ -68,9 +80,13 @@ body {
 	color: white;
 }
 
+#rank {
+	width: 20px;
+}
+
 table {
 	width: 100%;
-	margin-top: -18px;
+	margin-top: -25px;
 }
 
 .table td {
@@ -86,7 +102,7 @@ table {
 }
 
 .table th {
-	padding: 0px 15px 0px 15px;
+	padding: 0px 15px 6px 15px;
 	text-align: left;
 	opacity: 0.8;
 	text-decoration: none;
