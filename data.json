@@ -46,302 +46,89 @@
                     "played": "3"
                 }
             ],
-            "matches": [
-                {
-                    "time": "do 13-9-2018 20:00",
-                    "home": "IJMOND BC 4",
-                    "away": "ZIJDERVELD BV VAN 8",
-                    "score": "6-2",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=227"
-                },
-                {
-                    "time": "zo 16-9-2018 09:30",
-                    "home": "SPACE SHUTTLE BV 1",
-                    "away": "ALMERE BV 17",
-                    "score": "2-6",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=425"
-                },
-                {
-                    "time": "zo 16-9-2018 10:00",
-                    "home": "HILLEGOM BC 7",
-                    "away": "SLOTERMEER BV 2",
-                    "score": "6-2",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=210"
-                },
-                {
-                    "time": "za 22-9-2018 19:00",
-                    "home": "ALMERE BV 17",
-                    "away": "IJMOND BC 4",
-                    "score": "4-4",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=13"
-                },
-                {
-                    "time": "zo 23-9-2018 09:30",
-                    "home": "SPACE SHUTTLE BV 1",
-                    "away": "SWISH BV 7",
-                    "score": "5-3",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=425"
-                },
-                {
-                    "time": "zo 23-9-2018 14:00",
-                    "home": "SLOTERMEER BV 2",
-                    "away": "ZIJDERVELD BV VAN 8",
-                    "score": "5-3",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=412"
-                },
-                {
-                    "time": "do 27-9-2018 20:00",
-                    "home": "IJMOND BC 4",
-                    "away": "SLOTERMEER BV 2",
-                    "score": "6-2",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=227"
-                },
-                {
-                    "time": "zo 30-9-2018 10:00",
-                    "home": "HILLEGOM BC 7",
-                    "away": "SPACE SHUTTLE BV 1",
-                    "score": "8-0",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=210"
-                },
-                {
-                    "time": "zo 30-9-2018 13:15",
-                    "home": "SWISH BV 7",
-                    "away": "ALMERE BV 17",
-                    "score": "6-2",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=440"
-                },
-                {
-                    "time": "zo 7-10-2018 09:30",
-                    "home": "SPACE SHUTTLE BV 1",
-                    "away": "IJMOND BC 4",
-                    "score": "3-5",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=425"
-                },
-                {
-                    "time": "zo 7-10-2018 13:15",
-                    "home": "SWISH BV 7",
-                    "away": "HILLEGOM BC 7",
-                    "score": "3-5",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=440"
-                },
-                {
-                    "time": "zo 7-10-2018 13:30",
-                    "home": "ALMERE BV 17",
-                    "away": "ZIJDERVELD BV VAN 8",
-                    "score": "7-1",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=13"
-                },
-                {
-                    "time": "za 3-11-2018 18:00",
-                    "home": "ZIJDERVELD BV VAN 8",
-                    "away": "SWISH BV 7",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=525"
-                },
-                {
-                    "time": "zo 4-11-2018 10:00",
-                    "home": "HILLEGOM BC 7",
-                    "away": "ALMERE BV 17",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=210"
-                },
-                {
-                    "time": "zo 4-11-2018 14:00",
-                    "home": "SLOTERMEER BV 2",
-                    "away": "SPACE SHUTTLE BV 1",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=412"
-                },
-                {
-                    "time": "do 8-11-2018 20:00",
-                    "home": "IJMOND BC 4",
-                    "away": "SWISH BV 7",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=227"
-                },
-                {
-                    "time": "zo 11-11-2018 14:00",
-                    "home": "SLOTERMEER BV 2",
-                    "away": "ALMERE BV 17",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=412"
-                },
-                {
-                    "time": "zo 11-11-2018 14:00",
-                    "home": "ZIJDERVELD BV VAN 8",
-                    "away": "HILLEGOM BC 7",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=525"
-                },
-                {
-                    "time": "zo 18-11-2018 09:30",
-                    "home": "SPACE SHUTTLE BV 1",
-                    "away": "ZIJDERVELD BV VAN 8",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=425"
-                },
-                {
-                    "time": "zo 18-11-2018 10:00",
-                    "home": "HILLEGOM BC 7",
-                    "away": "IJMOND BC 4",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=210"
-                },
-                {
-                    "time": "zo 18-11-2018 13:15",
-                    "home": "SWISH BV 7",
-                    "away": "SLOTERMEER BV 2",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=440"
-                },
-                {
-                    "time": "za 1-12-2018 19:00",
-                    "home": "ALMERE BV 17",
-                    "away": "SPACE SHUTTLE BV 1",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=13"
-                },
-                {
-                    "time": "zo 2-12-2018 14:00",
-                    "home": "ZIJDERVELD BV VAN 8",
-                    "away": "IJMOND BC 4",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=525"
-                },
-                {
-                    "time": "zo 2-12-2018 14:00",
-                    "home": "SLOTERMEER BV 2",
-                    "away": "HILLEGOM BC 7",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=412"
-                },
-                {
-                    "time": "do 6-12-2018 20:00",
-                    "home": "IJMOND BC 4",
-                    "away": "ALMERE BV 17",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=227"
-                },
-                {
-                    "time": "za 8-12-2018 18:00",
-                    "home": "ZIJDERVELD BV VAN 8",
-                    "away": "SLOTERMEER BV 2",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=525"
-                },
-                {
-                    "time": "zo 9-12-2018 14:00",
-                    "home": "SWISH BV 7",
-                    "away": "SPACE SHUTTLE BV 1",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=440"
-                },
-                {
-                    "time": "za 15-12-2018 19:00",
-                    "home": "ALMERE BV 17",
-                    "away": "SWISH BV 7",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=13"
-                },
-                {
-                    "time": "zo 16-12-2018 09:30",
-                    "home": "SPACE SHUTTLE BV 1",
-                    "away": "HILLEGOM BC 7",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=425"
-                },
-                {
-                    "time": "zo 16-12-2018 14:00",
-                    "home": "SLOTERMEER BV 2",
-                    "away": "IJMOND BC 4",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=412"
-                },
-                {
-                    "time": "do 10-1-2019 20:00",
-                    "home": "IJMOND BC 4",
-                    "away": "SPACE SHUTTLE BV 1",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=227"
-                },
-                {
-                    "time": "zo 13-1-2019 10:00",
-                    "home": "HILLEGOM BC 7",
-                    "away": "SWISH BV 7",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=210"
-                },
-                {
-                    "time": "zo 13-1-2019 13:30",
-                    "home": "ZIJDERVELD BV VAN 8",
-                    "away": "ALMERE BV 17",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=525"
-                },
-                {
-                    "time": "zo 20-1-2019 09:30",
-                    "home": "ALMERE BV 17",
-                    "away": "SLOTERMEER BV 2",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=13"
-                },
-                {
-                    "time": "zo 20-1-2019 10:00",
-                    "home": "HILLEGOM BC 7",
-                    "away": "ZIJDERVELD BV VAN 8",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=210"
-                },
-                {
-                    "time": "zo 20-1-2019 12:45",
-                    "home": "SWISH BV 7",
-                    "away": "IJMOND BC 4",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=440"
-                },
-                {
-                    "time": "do 24-1-2019 20:00",
-                    "home": "IJMOND BC 4",
-                    "away": "HILLEGOM BC 7",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=227"
-                },
-                {
-                    "time": "zo 27-1-2019 14:00",
-                    "home": "ZIJDERVELD BV VAN 8",
-                    "away": "SPACE SHUTTLE BV 1",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=525"
-                },
-                {
-                    "time": "zo 27-1-2019 14:00",
-                    "home": "SLOTERMEER BV 2",
-                    "away": "SWISH BV 7",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=412"
-                },
-                {
-                    "time": "za 9-2-2019 19:00",
-                    "home": "ALMERE BV 17",
-                    "away": "HILLEGOM BC 7",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=13"
-                },
-                {
-                    "time": "zo 10-2-2019 09:30",
-                    "home": "SPACE SHUTTLE BV 1",
-                    "away": "SLOTERMEER BV 2",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=425"
-                },
-                {
-                    "time": "zo 10-2-2019 14:00",
-                    "home": "SWISH BV 7",
-                    "away": "ZIJDERVELD BV VAN 8",
-                    "score": "",
-                    "location": "./location.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&lid=440"
-                }
-            ]
+            "next": {
+                "time": "zo 4-11-2018 10:00",
+                "home": "HILLEGOM BC 7",
+                "away": "ALMERE BV 17",
+                "score": "",
+                "locationid": "210",
+                "gameid": "4648"
+            },
+            "last": {
+                "time": "zo 7-10-2018 13:15",
+                "home": "SWISH BV 7",
+                "away": "HILLEGOM BC 7",
+                "score": "3-5",
+                "locationid": "440",
+                "gameid": "4644",
+                "games": [
+                    [
+                        "MD",
+                        "Huug de Dreu",
+                        "Luuk van Vliet",
+                        "Sander van Wickeren",
+                        "Bryan van Rijn",
+                        "21-17 15-21 9-21",
+                        "away"
+                    ],
+                    [
+                        "VD",
+                        "Menna van der Voort-de Wolf",
+                        "Taima Sjoerds",
+                        "Natasja Woudstra",
+                        "Miranda Huurman",
+                        "21-18 21-15",
+                        "home"
+                    ],
+                    [
+                        "ME1",
+                        "Luuk van Vliet",
+                        "Derek Bakker",
+                        "21-13 20-22 18-21",
+                        "away"
+                    ],
+                    [
+                        "VE1",
+                        "Taima Sjoerds",
+                        "Miranda Huurman",
+                        "21-8 21-4",
+                        "home"
+                    ],
+                    [
+                        "ME2",
+                        "Huug de Dreu",
+                        "Bryan van Rijn",
+                        "19-21 18-21",
+                        "away"
+                    ],
+                    [
+                        "VE2",
+                        "Menna van der Voort-de Wolf",
+                        "Natasja Woudstra",
+                        "21-12 21-3",
+                        "home"
+                    ],
+                    [
+                        "GD1",
+                        "Huug de Dreu",
+                        "Menna van der Voort-de Wolf",
+                        "Sander van Wickeren",
+                        "Miranda Huurman",
+                        "19-21 21-18 13-21",
+                        "away"
+                    ],
+                    [
+                        "GD2",
+                        "Luuk van Vliet",
+                        "Taima Sjoerds",
+                        "Derek Bakker",
+                        "Natasja Woudstra",
+                        "18-21 14-21",
+                        "away"
+                    ]
+                ]
+            },
+            "players": "Derek, van, van, Danique, Miranda, Natasja"
         }
     ]
 }

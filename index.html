@@ -3,6 +3,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
 <script>
 var test;
@@ -14,9 +15,42 @@ $().ready(function(){
     console.log(data["Team 7"][0]);
     $("#test").html(data);
     $(".table").html(genTable(data["Team 7"][0]["table"]));
+    $(".mokerbody").html(genFramework(data["Team 7"][0]));
+    console.log(genFramework(data["Team 7"][0]));
+    addListeners();
+
     //loadmatches();
+
+    // Opening rank standard
+    $(".open").click();
   });
 });
+
+// Heart of the website. From the json obj it starts
+// producing cards containing the information from 
+// scratch. It uses helper functions to keep things
+// clear. It takes one team object as input.
+function genFramework(obj) {
+    console.log(obj);
+    html = ""
+    html += '<div class="team"><div id="topteam"><p class="teamname">' + "Hillegom BC 7"; // Moet nog uit data
+    html += '</p><p class="teamdivision">' + obj['division'] + ' - <span id="teammembers"> ';
+
+    // Table html
+    html += obj['players'] + '</span></p></div><button class="collapsible open">Stand<div style="float:right;" class="fas fa-chevron-up rotate">' +
+    '</div></button><div class="content"><div class="content-inside"><div class="table">' + genTable(obj["table"]) + '</div></div></div>';
+
+    // Last game
+    html += '<button class="collapsible">Afgelopen wedstrijd<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>' +
+    '<div class="content"><div class="content-inside">Za 15-6-2019 Hillegom BC 7 - Zwijndrecht: 6-2 </div></div> ';
+
+    // Next game
+    html += '<button class="collapsible">Volgende wedstrijd<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>' +
+    '<div class="content"><div class="content-inside">Zo 23-6-2019 Hillegom BC 7 - almere</div></div><div class="footergame"></div></div>';
+
+    return html;
+
+}
 
 // Takes as input a json object containing the table standings
 // Returns the html needed to show the table.
@@ -35,7 +69,7 @@ function genTable(obj){
         tableContent += start + obj[i].rank + "</td><td id='tableClubname'>" + obj[i].team.toLowerCase() + "</td><td>" + obj[i].points + "</td><td>" + obj[i].played + "</td></tr>";
     };
 
-    return tableContent;
+    return tableContent + '</table>';
 
 }
 
@@ -45,7 +79,7 @@ function loadmatches(){
     var tableContent = '';
 
     for (var i=0; i<test.length;i++) {
-            tableContent += '<div id="tableDiv"><table><tr>' + test[i].home + " - " + test[i].away + " ::--:: " + test[i].score +  '</tr>';
+            tableContent += '<div id="tableDiv"><table><tr>' + test[i].home + " - " + test[i].away + " ::--:: " + test[i].score +  '</tr>'; 
             console.log(test[i]);
     }
 
@@ -54,40 +88,134 @@ function loadmatches(){
 }
 </script>
 <header>
-    <div id="head"> BC Hillegom competitie </div>
+    <div id="head"> BC Hillegom competitie 18/19</div>
 </header>
 
-<body>
-<div id="test"></div>
+<body class="mokerbody">
+<div class="team">
+    <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie - <span id="teammembers"> Sander, Bryan, Derek, Miranda, Natasja, Danique</span></p></div>
+    <button class="collapsible open">Stand<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>
+    <div class="content">
+        <div class="content-inside">
+            <div class="table">test</div>
+        </div>
+    </div>
+    <button class="collapsible">Afgelopen wedstrijd<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>
+    <div class="content">
+        <div class="content-inside">
+            Za 15-6-2019 Hillegom BC 7 - Zwijndrecht: 6-2
+        </div>
+    </div>
+    <button class="collapsible">Volgende wedstrijd<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>
+    <div class="content">
+        <div class="content-inside">
+            Zo 23-6-2019 Hillegom BC 7 - almere
+        </div>
+    </div>
+    <div class="footergame"></div>
+</div>
+
 <div class="team">
     <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie</p></div>
-    <div class="table">test</div>
-    <div class="nextgame">Next:</div>
+    <button class="collapsible open">Stand<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>
+    <div class="content">
+        <div class="content-inside">
+            <div class="table">test</div>
+        </div>
+    </div>
+    <button class="collapsible">Afgelopen wedstrijd<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>
+    <div class="content">
+        <div class="content-inside">
+            Za 15-6-2019 Hillegom BC 7 - Zwijndrecht: 6-2
+        </div>
+    </div>
+    <button class="collapsible">Volgende wedstrijd<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>
+    <div class="content">
+        <div class="content-inside">
+            Zo 23-6-2019 Hillegom BC 7 - almere
+        </div>
+    </div>
+    <div class="footergame"></div>
 </div>
-<div class="team">
-    <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie</p></div>
-    <div class="table">test</div>
-    <div class="nextgame">Next:</div>
-</div>
-<div class="team">
-    <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie</p></div>
-    <div class="table">test</div>
-    <div class="nextgame">Next:</div>
-</div>
-<div class="team">
-    <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie</p></div>
-    <div class="table">test</div>
-    <div class="nextgame">Next:</div>
-</div>
-<div class="team">
-    <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie</p></div>
-    <div class="table">test</div>
-    <div class="nextgame">Next:</div>
-</div>
-<div class="team">
-    <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie</p></div>
-    <div class="table">test</div>
-    <div class="nextgame">Next:</div>
-</div>
+
+<script> 
+
+function addListeners() {
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+
+      coll[i].addEventListener("click", function() {
+
+        // Toggle content
+        toggleContent(this);
+        
+        // Check if other collapsibles have to close.
+        checkToggle(nthNextSibling(this, 2));
+        checkToggle(nthNextSibling(this, 4));
+        checkToggle(nthPreviousSibling(this, 2));
+        checkToggle(nthPreviousSibling(this, 4));
+      });
+    };
+};
+
+// Checks if collapisible is active, if so, deactivate.
+function checkToggle(elem) {
+    if (elem != false && elem != null && elem.classList.contains("active")) {
+        toggleContent(elem);
+    } else { 
+        return false 
+    };
+};
+
+// Returns the nth next sibling from an element elem.
+function nthNextSibling(elem, n) {
+    try {
+        while (n > 0) {
+            var elem = elem.nextElementSibling;
+            n -= 1;
+        };
+    }
+    catch(err) {
+        return false;
+    }
+    return elem;
+};
+
+function nthPreviousSibling(elem, n) {
+    try {
+        while (n > 0) {
+            var elem = elem.previousElementSibling;
+            n -= 1;
+        };
+    }
+    catch(err) {
+        return false;
+    }
+    return elem;
+};
+
+// Used to toggle the content of a collapsible
+function toggleContent(cont) {
+
+    // Toggle active class to initiate animation
+    cont.classList.toggle("active");
+    var content = cont.nextElementSibling;
+    
+    // Retrieve arrow div and toggle to initiate animation
+    var arrow = cont.lastChild;
+    arrow.classList.toggle("down");
+    
+    // Show content div
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    };
+};
+
+</script>
+
 </body>
 </html>

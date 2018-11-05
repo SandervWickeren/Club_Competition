@@ -7,7 +7,7 @@ body {
 #head {
 	background-color: #233544;
 	color: white;
-	padding: 40px 10px 20px 10px;
+	padding: 30px 10px 20px 10px;
 	height: 60px;
 	width: 100%;
 	text-align: center;
@@ -29,7 +29,8 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .team {
-	width: 96%;
+	width: 90%;
+	
   }
 
 /*  table {
@@ -63,10 +64,13 @@ body {
 	color: white;
 }
 
-.nextgame {
+#teammembers {
+	font-style: italic; 
+}
+
+.footergame {
 	background-color: #383F44;
-	padding: 5px;
-	color: white;
+	padding: 10px;
 }
 
 #tableClubname {
@@ -86,7 +90,11 @@ body {
 
 table {
 	width: 100%;
-	margin-top: -25px;
+}
+
+.table {
+	height: 426px;
+	max-height: 426px;
 }
 
 .table td {
@@ -106,7 +114,7 @@ table {
 	text-align: left;
 	opacity: 0.8;
 	text-decoration: none;
-	color: white;
+	color: black;
 	font-size: 0.93em;
 }
 
@@ -114,3 +122,53 @@ table {
 	background-color: #383F44;
 	padding: 5px;
 }
+
+
+
+/* <Collapsible content and arrow animation> */
+
+#coll-icon {
+	right: 0;
+}
+
+.collapsible {
+  background-color: #383F44;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #4D565E;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.content-inside {
+	height: 426px;
+}
+
+.rotate{
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.rotate.down{
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+/* </Collapsible content and arrow animation> */
