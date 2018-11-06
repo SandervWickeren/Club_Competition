@@ -37,18 +37,22 @@ def get_ranking(soup):
     rows = soup.find('table', {"class": "ruler"}).findAll('tr')
     division = " ".join(soup.findAll("div", {"class":"title"})[0].get_text().split()[:2])
 
-
+    teamname = ""
     ranking = []
     for row in rows[1:]:
-        ranking.append(strip_rank_col(row))
+        r = strip_rank_col(row)
+        ranking.append(r)
 
-    return {"division": division, "table": ranking}
+        if "hillegom" in r['team'].lower():
+            teamname = prettify_teamname(r['team'])
+
+    return {"division": division, "name": teamname, "table": ranking}
 
 # strips the match cols into a list of items.
 def strip_match_col(rows):
     time = rows.find('td', {"class":"plannedtime"}).get_text()
-    home = rows.findAll('a', {"class":"teamname"})[0].get_text()
-    away = rows.findAll('a', {"class":"teamname"})[1].get_text()
+    home = lower_layout(rows.findAll('a', {"class":"teamname"})[0].get_text())
+    away = lower_layout(rows.findAll('a', {"class":"teamname"})[1].get_text())
     
     # Retrieves location id
     location_link = rows.findAll('a')[-1]['href']
@@ -64,11 +68,12 @@ def strip_match_col(rows):
     except:
         score = ""
 
-    return {"time": time, "home": home,"away": away, "score": score,"locationid": locID, "gameid":gameID}
+    return {"time": time, "home": home,"away": away,
+            "score": score,"locationid": locID, "gameid":gameID}
 
 def strip_rank_col(rows):
     rank = rows.find('td', {"class":"standingsrank"}).get_text()
-    team = rows.find('a').get_text()
+    team = lower_layout(rows.find('a').get_text())
     scores = rows.findAll('td', {"align":"center"})
     points = scores[0].get_text()
     played = scores[1].get_text()
@@ -87,13 +92,13 @@ def get_players(soup):
     for player in players:
 
         # Gets basic info for every person in a list
-        info = player.get_text(" ").split(" ")[1:-1]
+        info = player.get_text(" ").split(",")[-1].split(" ")[1:-1]
         
         # Discard player if not a regular player
         if info[-1] == "Ja":
             
             # Retrieve only the surname.
-            name = list(reversed(info[0:-2]))[0]
+            name = info[0]
             names.append(name)
 
     return ", ".join(names)
@@ -121,6 +126,11 @@ def get_last_game(json):
     
     for dictionary in get_games(json, "hillegom"):
         if dictionary["score"] != "":
+
+            # Remove teamnumber
+            dictionary["home"] = teamname_only(dictionary["home"])
+            dictionary["away"] = teamname_only(dictionary["away"])
+
             result.append(dictionary)
     
     return result[-1]
@@ -134,6 +144,11 @@ def get_next_game(json):
     
     for dictionary in get_games(json, "hillegom"):
         if dictionary["score"] == "":
+
+            # Remove teamnumber
+            dictionary["home"] = teamname_only(dictionary["home"])
+            dictionary["away"] = teamname_only(dictionary["away"])
+
             return dictionary
 
 
@@ -173,20 +188,29 @@ def who_wins(points):
         return "home"
     else:
         return "away"
+
+def lower_layout(string):
+    end = string[1:].lower()
+    return string[0] + end
+
+def teamname_only(string):
+    return string.split(" ")[0]
+
+def prettify_teamname(string):
+    spl = string.split(" ")
+    return spl[0] + " " + spl[1].upper() + " " + spl[2]
+
    
 
-def match():
-    link = "https://badmintonnederland.toernooi.nl/sport/drawmatches.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&draw=73"
+def match(link):
     soup = get_webpage(link)
     return get_matches(soup)
 
-def rank():
-    link = "https://badmintonnederland.toernooi.nl/sport/draw.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&draw=73"
+def rank(link):
     soup = get_webpage(link)
     return get_ranking(soup)
 
-def players():
-    link = "https://badmintonnederland.toernooi.nl/sport/teamplayers.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&tid=505"
+def players(link):
     soup = get_webpage(link)
     return get_players(soup)
 
@@ -206,46 +230,74 @@ def createFile(name, string):
         json.dump(string, jsonfile, ensure_ascii=False, indent=4)
 
 
-def dumpjson():
-    combined_dict = {**rank(), **match()}
-    data = ({"Team 7": [combined_dict]})
-    jstr = json.dumps(data, indent=4)
-    createFile("data.json", data)
-    print("Succes!")
+def init_data(team):
+    rank_link = craftLink("draw", seasonID, "&draw=", team[1])
+    match_link = craftLink("drawmatches", seasonID, "&draw=", team[1])
+    member_link = craftLink("teamplayers", seasonID, "&tid=", team[0])
 
-def init_data():
-    ranking = rank()
-    matches = match()
+    ranking = rank(rank_link)
+    matches = match(match_link)
+    members = players(member_link)
+
+    # Other calculations
     next_match = {"next":get_next_game(matches)}
     previous_match = get_last_game(matches)
     previous_match["games"] = game(previous_match["gameid"])
     last_match = {"last": previous_match}
-    p = {"players": players()}
+    p = {"players": members}
 
-    combined_dict = {**rank(), **next_match, **last_match, **p}
-    data = ({"Team 7": [combined_dict]})
-    jstr = json.dumps(data, indent=4)
-    createFile("data.json", data)
-    return "Succes!"
+    combined_dict = {**ranking, **next_match, **last_match, **p}
+
+    return combined_dict
 
 
 #dumpjson()
 
 # Todo:
-#  Lowercase except first letter
 #  Lookup every team
 #  Automically move json file to github
 #  Daily checks.
 #  What if no internet connection?
+#  Next match based on time, not on where score = ''
+#  Scrape ID's and draw automatically.
 
 # https://badmintonnederland.toernooi.nl/sport/teamplayers.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&tid=505
 # https://badmintonnederland.toernooi.nl/sport/teamplayers.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&tid=504
 # https://badmintonnederland.toernooi.nl/sport/teamplayers.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&tid=499
 # https://badmintonnederland.toernooi.nl/sport/team.aspx?id=F3C6D619-32F6-4C2A-8506-798D7493D668&team=499
 
+# Tid, draw
+# draw / drawmatches
+def start(teamInfo):
+    start_time = time.clock()
+    total = []
+
+    for team in teamInfo:
+        print("Busy with team: %s --" % team, round(time.clock() - start_time, 2), "seconds passed so far.")
+        try:
+            teamdata = init_data(team)
+            total.append(teamdata)
+        except Exception as e:
+            print ("Error on team %s:" % team, e)
+
+    print("Dumping into json file..")
+    data = ({"Teams": total})
+    jstr = json.dumps(data, indent=4)
+    createFile("data.json", data)
+
+
+
+
+
+
+
+
 teamID = [505, 504, 499]
 seasonID = "F3C6D619-32F6-4C2A-8506-798D7493D668"
 baseLink = "https://badmintonnederland.toernooi.nl/sport/"
+teamInfo = [[499, 23], [500, 22], [501, 44], [502, 43], [503, 42], [504, 74],
+            [505, 73], [506, 89], [507, 135], [508, 153]]
+# teamInfo = [[499, 23]]
 
 def craftTeamLink(info, seasonID, teamID):
     baseLink = "https://badmintonnederland.toernooi.nl/sport/"
@@ -257,10 +309,16 @@ def craftGameLink(info, seasonID, gameID):
     link = baseLink + info + ".aspx?id=" + seasonID + "&match=" + str(gameID)
     return link
 
+def craftLink(info, seasonID, compare, cid):
+    baseLink = "https://badmintonnederland.toernooi.nl/sport/"
+    link = baseLink + info + ".aspx?id=" + seasonID + compare + str(cid)
+    return link
+
 #print(game(4644))
 #print(get_last_game(match())["gameid"])
 start_time = time.clock()
-print(init_data())
-print(time.clock() - start_time, "seconds")
+start(teamInfo)
+
+print("Finished in", round(time.clock() - start_time, 2), "seconds")
 
 

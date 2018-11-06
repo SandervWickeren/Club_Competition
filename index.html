@@ -2,7 +2,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=600">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
 <script>
@@ -10,16 +10,26 @@ var test;
 
 $().ready(function(){
     $.getJSON( "./data.json", function( data ) {
-    console.log(data);
+/*    console.log(data);
     test = data["Team 7"][0]['matches'];
     console.log(data["Team 7"][0]);
     $("#test").html(data);
-    $(".table").html(genTable(data["Team 7"][0]["table"]));
-    $(".mokerbody").html(genFramework(data["Team 7"][0]));
-    console.log(genFramework(data["Team 7"][0]));
-    addListeners();
+    $(".table").html(genTable(data["Team 7"][0]["table"]));*/
 
-    //loadmatches();
+    var h = document.getElementById('mokerbody').innerHTML;
+
+    for (var i = 0; i<data['Teams'].length; i++) {
+        console.log()
+        h += genFramework(data['Teams'][i]);
+    }
+
+/*    var h = document.getElementById('mokerbody').innerHTML;
+    var z = genFramework(data["Team 7"][0])
+    var Nh = h + z + z + z;*/
+
+    
+    $("#mokerbody").html(h);
+    addListeners();
 
     // Opening rank standard
     $(".open").click();
@@ -33,20 +43,19 @@ $().ready(function(){
 function genFramework(obj) {
     console.log(obj);
     html = ""
-    html += '<div class="team"><div id="topteam"><p class="teamname">' + "Hillegom BC 7"; // Moet nog uit data
+    html += '<div class="team"><div id="topteam"><p class="teamname">' + obj['name']; 
     html += '</p><p class="teamdivision">' + obj['division'] + ' - <span id="teammembers"> ';
 
     // Table html
-    html += obj['players'] + '</span></p></div><button class="collapsible open">Stand<div style="float:right;" class="fas fa-chevron-up rotate">' +
+    html += obj['players'] + '</span></p></div><button class="collapsible open"><p class="teamdivision">Stand:</p>Plek x<div class="fas fa-chevron-up rotate arrowHolder">' +
     '</div></button><div class="content"><div class="content-inside"><div class="table">' + genTable(obj["table"]) + '</div></div></div>';
 
     // Last game
-    html += '<button class="collapsible">Afgelopen wedstrijd<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>' +
-    '<div class="content"><div class="content-inside">Za 15-6-2019 Hillegom BC 7 - Zwijndrecht: 6-2 </div></div> ';
+    html += '<button class="collapsible"><p class="teamdivision">Vorige: </p>' + obj['last']['time'] + ' | ' + obj['last']['home'] + ' - ' + obj['last']['away'] + ' (' + obj['last']['score'] + ') ' + '<div class="fas fa-chevron-up rotate arrowHolder"></div></button>' + '<div class="content"><div class="content-inside"><div class="table names">' + genLastMatch(obj['last']['games']) + '</div></div></div> ';
 
     // Next game
-    html += '<button class="collapsible">Volgende wedstrijd<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>' +
-    '<div class="content"><div class="content-inside">Zo 23-6-2019 Hillegom BC 7 - almere</div></div><div class="footergame"></div></div>';
+    html += '<button class="collapsible"><p class="teamdivision">Volgende: </p>'  + obj['next']['time'] + ' | ' + obj['next']['home'] + ' - ' + obj['next']['away'] + '<div class="fas fa-chevron-up rotate arrowHolder"></div></button>' +
+    '<div class="content"><div class="content-inside"><div>' + "Wordt aan gesleuteld" + '</div></div></div><div class="footergame"></div></div>';
 
     return html;
 
@@ -56,7 +65,7 @@ function genFramework(obj) {
 // Returns the html needed to show the table.
 function genTable(obj){
     var tableContent = "<table cellspacing='0' cellpadding='0'><tr><th></th><th></th><th>P</th><th>G</th></tr>";
-    var start = ""
+    var start;
 
     for (var i=0; i<obj.length;i++) {
 
@@ -66,11 +75,44 @@ function genTable(obj){
             start = "<tr><td id='rank'>";
         };
 
-        tableContent += start + obj[i].rank + "</td><td id='tableClubname'>" + obj[i].team.toLowerCase() + "</td><td>" + obj[i].points + "</td><td>" + obj[i].played + "</td></tr>";
+        tableContent += start + obj[i].rank + "</td><td id='tableClubname'>" + obj[i].team + "</td><td id='score'>" + obj[i].points + "</td><td id='score'>" + obj[i].played + "</td></tr>";
     };
 
     return tableContent + '</table>';
 
+}
+
+// Takes as input a json object containing list of lists with matches
+// Returns the html needed to show a table
+function genLastMatch(obj) {
+    console.log(obj);
+
+    var content = "<table cellspacing='0' cellpadding='0'><tr><th></th><th></th><th></th><th></th><th></th></tr>";
+    var start;
+    var h;
+    var a;
+
+    for (var i=0; i<obj.length;i++) {
+
+        start = "<tr><td id='rank'>" + obj[i][0] + '</td>';
+
+        if (obj[i][obj[i].length - 1] == 'home') {
+            h = "<td class='mark'>"
+            a = "<td>"
+        } else {
+            a = "<td class='mark'>"
+            h = "<td>"
+        }
+
+        if (obj[i][0].includes("D")) {
+            content += start + h + obj[i][1] + "<BR/>" + obj[i][2] + '</td><td>-</td>' + a + obj[i][3] + "<BR/>" + obj[i][4] + '</td><td>' + obj[i][5] + "</td></tr>"
+        } else {
+            content += start + h + obj[i][1] + '</td><td>-</td>' + a + obj[i][2] + '</td><td>' + obj[i][3] + "</td></tr>"
+        }
+    }
+
+
+    return content + '</table>';
 }
 
 function loadmatches(){
@@ -91,52 +133,7 @@ function loadmatches(){
     <div id="head"> BC Hillegom competitie 18/19</div>
 </header>
 
-<body class="mokerbody">
-<div class="team">
-    <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie - <span id="teammembers"> Sander, Bryan, Derek, Miranda, Natasja, Danique</span></p></div>
-    <button class="collapsible open">Stand<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>
-    <div class="content">
-        <div class="content-inside">
-            <div class="table">test</div>
-        </div>
-    </div>
-    <button class="collapsible">Afgelopen wedstrijd<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>
-    <div class="content">
-        <div class="content-inside">
-            Za 15-6-2019 Hillegom BC 7 - Zwijndrecht: 6-2
-        </div>
-    </div>
-    <button class="collapsible">Volgende wedstrijd<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>
-    <div class="content">
-        <div class="content-inside">
-            Zo 23-6-2019 Hillegom BC 7 - almere
-        </div>
-    </div>
-    <div class="footergame"></div>
-</div>
-
-<div class="team">
-    <div id="topteam"><p class="teamname">Hillegom BC 7</p><p class="teamdivision">6e divisie</p></div>
-    <button class="collapsible open">Stand<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>
-    <div class="content">
-        <div class="content-inside">
-            <div class="table">test</div>
-        </div>
-    </div>
-    <button class="collapsible">Afgelopen wedstrijd<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>
-    <div class="content">
-        <div class="content-inside">
-            Za 15-6-2019 Hillegom BC 7 - Zwijndrecht: 6-2
-        </div>
-    </div>
-    <button class="collapsible">Volgende wedstrijd<div style="float:right;" class="fas fa-chevron-up rotate"></div></button>
-    <div class="content">
-        <div class="content-inside">
-            Zo 23-6-2019 Hillegom BC 7 - almere
-        </div>
-    </div>
-    <div class="footergame"></div>
-</div>
+<body id="mokerbody">
 
 <script> 
 
@@ -209,9 +206,11 @@ function toggleContent(cont) {
     
     // Show content div
     if (content.style.maxHeight){
-      content.style.maxHeight = null;
+        content.style.overflow = "hidden";
+        content.style.maxHeight = null;
     } else {
-      content.style.maxHeight = content.scrollHeight + "px";
+        content.style.overflow = "auto";
+        content.style.maxHeight = content.scrollHeight + "px";
     };
 };
 

@@ -2,36 +2,41 @@ body {
 	background-color:  white;
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
+	/*position: fixed;*/
 }
 
 #head {
 	background-color: #233544;
 	color: white;
-	padding: 30px 10px 20px 10px;
-	height: 60px;
+	padding: 1vh 1vw 1vh 1vw;
+	height: 30px;
 	width: 100%;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-	font-size: 2em;
+	font-size: 1.3em;
 }
 
 @media only screen and (min-width: 1300px) {
   .team {
-	width: 30%;
+	width: 30vw;
+	margin: 1vh 1vw 1vh 1vw;
   }
 }
 
 @media only screen and (max-width: 1299px) {
   .team {
-	width: 45%;
+	width: 40vw;
+	margin: 1vh 1vw 1vh 1vw;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .team {
-	width: 90%;
-	
+	width: 90vw;
+	margin: 1vh 4vw 1vh 6vw;
   }
+
+
 
 /*  table {
   	font-size: 17px;
@@ -47,14 +52,13 @@ body {
 }
 
 .team {
-	min-width: 300px;
+	/*min-width: 300px;*/
 	display: inline-block;
-	margin: 20px;
 }
 
 .teamname {
 	margin: 0;
-	font-size: 15px;
+	font-size: 1em;
 	color: white;
 }
 
@@ -70,12 +74,13 @@ body {
 
 .footergame {
 	background-color: #383F44;
-	padding: 10px;
+	padding: 20px;
 }
 
 #tableClubname {
-	width: 40%;
-	max-width: 140px;
+	width: 60%;
+	max-width: 200px;
+	font-size: 19px;
 	overflow: hidden;
 }
 
@@ -88,21 +93,24 @@ body {
 	width: 20px;
 }
 
+#score {
+	width: 25px;
+}
+
 table {
 	width: 100%;
 }
 
 .table {
-	height: 426px;
-	max-height: 426px;
+	height: 50vh;
+	max-height: 50vh;
 }
 
 .table td {
-	padding: 15px;
+	padding: 1.5vh 1.1vw 1.5vh 1.1vw;
 	text-align: left;
 	border: none;
 	border-bottom: 1px solid #ddd;
-
 }
 
 .table tr:nth-child(even) {
@@ -110,17 +118,31 @@ table {
 }
 
 .table th {
-	padding: 0px 15px 6px 15px;
+	padding: 1vh 1vw 1vh 1vw;
 	text-align: left;
 	opacity: 0.8;
 	text-decoration: none;
 	color: black;
-	font-size: 0.93em;
+
+}
+
+.names td {
+	font-size: 1em;
+}
+
+.mark {
+	border-left: 2px solid black;
+	font-weight: bold;
 }
 
 #topteam {
 	background-color: #383F44;
 	padding: 5px;
+}
+
+.arrowHolder {
+	float: right;
+	padding: 0px 5px 0px 5px;
 }
 
 
@@ -135,7 +157,7 @@ table {
   background-color: #383F44;
   color: white;
   cursor: pointer;
-  padding: 10px;
+  padding: 6px 5px 6px 5px;
   width: 100%;
   border: none;
   text-align: left;
@@ -148,15 +170,19 @@ table {
 }
 
 .content {
-  padding: 0 18px;
+  padding: 0 10px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
 
+/*.content::-webkit-scrollbar { 
+    display: none; 
+}
+*/
 .content-inside {
-	height: 426px;
+	height: 50vh;
 }
 
 .rotate{

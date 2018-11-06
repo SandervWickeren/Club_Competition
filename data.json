@@ -1,134 +1,1076 @@
 {
-    "Team 7": [
+    "Teams": [
         {
-            "division": "6e divisie",
+            "division": "4e divisie",
+            "name": "Hillegom BC 1",
             "table": [
                 {
                     "rank": "1",
-                    "team": "IJMOND BC 4",
-                    "points": "21",
-                    "played": "4"
+                    "team": "Hillegom bc 1",
+                    "points": "41",
+                    "played": "7"
                 },
                 {
                     "rank": "2",
-                    "team": "HILLEGOM BC 7",
-                    "points": "19",
-                    "played": "3"
+                    "team": "Almagest floriande bv 1",
+                    "points": "25",
+                    "played": "5"
                 },
                 {
                     "rank": "3",
-                    "team": "ALMERE BV 17",
-                    "points": "19",
-                    "played": "4"
+                    "team": "Martinus a veen/gaasperdam 3",
+                    "points": "24",
+                    "played": "5"
                 },
                 {
                     "rank": "4",
-                    "team": "SWISH BV 7",
-                    "points": "12",
-                    "played": "3"
+                    "team": "Zijderveld bv van 5",
+                    "points": "22",
+                    "played": "6"
                 },
                 {
                     "rank": "5",
-                    "team": "SPACE SHUTTLE BV 1",
-                    "points": "10",
-                    "played": "4"
+                    "team": "Duinwijck bc 9",
+                    "points": "19",
+                    "played": "5"
                 },
                 {
                     "rank": "6",
-                    "team": "SLOTERMEER BV 2",
-                    "points": "9",
-                    "played": "3"
+                    "team": "Limes bc 2",
+                    "points": "16",
+                    "played": "5"
                 },
                 {
                     "rank": "7",
-                    "team": "ZIJDERVELD BV VAN 8",
-                    "points": "6",
-                    "played": "3"
+                    "team": "Swish bv 3",
+                    "points": "15",
+                    "played": "6"
+                },
+                {
+                    "rank": "8",
+                    "team": "Meershuttle bc 3",
+                    "points": "14",
+                    "played": "5"
                 }
             ],
             "next": {
-                "time": "zo 4-11-2018 10:00",
-                "home": "HILLEGOM BC 7",
-                "away": "ALMERE BV 17",
+                "time": "za 17-11-2018 19:00",
+                "home": "Meershuttle",
+                "away": "Hillegom",
                 "score": "",
-                "locationid": "210",
-                "gameid": "4648"
+                "locationid": "537",
+                "gameid": "1455"
             },
             "last": {
-                "time": "zo 7-10-2018 13:15",
-                "home": "SWISH BV 7",
-                "away": "HILLEGOM BC 7",
-                "score": "3-5",
-                "locationid": "440",
-                "gameid": "4644",
+                "time": "zo 4-11-2018 10:00",
+                "home": "Hillegom",
+                "away": "Almagest",
+                "score": "4-4",
+                "locationid": "210",
+                "gameid": "1435",
                 "games": [
                     [
                         "MD",
-                        "Huug de Dreu",
-                        "Luuk van Vliet",
-                        "Sander van Wickeren",
-                        "Bryan van Rijn",
-                        "21-17 15-21 9-21",
+                        "Pim Nieuwenhuizen",
+                        "Hurly Holtrop",
+                        "Erwin Molenaar",
+                        "Quoc Truong",
+                        "17-21 19-21",
                         "away"
                     ],
                     [
                         "VD",
-                        "Menna van der Voort-de Wolf",
-                        "Taima Sjoerds",
-                        "Natasja Woudstra",
-                        "Miranda Huurman",
-                        "21-18 21-15",
-                        "home"
+                        "Chloe Fonville",
+                        "Ilse Niewold",
+                        "Rachel Pichel-Geertsen",
+                        "Marian Truong-Lensen",
+                        "17-21 12-21",
+                        "away"
                     ],
                     [
                         "ME1",
-                        "Luuk van Vliet",
-                        "Derek Bakker",
-                        "21-13 20-22 18-21",
-                        "away"
-                    ],
-                    [
-                        "VE1",
-                        "Taima Sjoerds",
-                        "Miranda Huurman",
-                        "21-8 21-4",
+                        "Pim Nieuwenhuizen",
+                        "Dennis Verkerk",
+                        "27-25 21-13",
                         "home"
                     ],
                     [
-                        "ME2",
-                        "Huug de Dreu",
-                        "Bryan van Rijn",
-                        "19-21 18-21",
+                        "VE1",
+                        "Chloe Fonville",
+                        "Rachel Pichel-Geertsen",
+                        "9-21 16-21",
                         "away"
                     ],
                     [
+                        "ME2",
+                        "Dennis van Groen",
+                        "Erwin Molenaar",
+                        "21-16 16-21 21-13",
+                        "home"
+                    ],
+                    [
                         "VE2",
-                        "Menna van der Voort-de Wolf",
-                        "Natasja Woudstra",
-                        "21-12 21-3",
+                        "Ilse Niewold",
+                        "Marian Truong-Lensen",
+                        "21-12 21-14",
                         "home"
                     ],
                     [
                         "GD1",
-                        "Huug de Dreu",
-                        "Menna van der Voort-de Wolf",
-                        "Sander van Wickeren",
-                        "Miranda Huurman",
-                        "19-21 21-18 13-21",
+                        "Ilse Niewold",
+                        "Hurly Holtrop",
+                        "Dennis Verkerk",
+                        "Rachel Pichel-Geertsen",
+                        "22-24 4-21",
                         "away"
                     ],
                     [
                         "GD2",
-                        "Luuk van Vliet",
-                        "Taima Sjoerds",
-                        "Derek Bakker",
-                        "Natasja Woudstra",
-                        "18-21 14-21",
+                        "Chloe Fonville",
+                        "Dennis van Groen",
+                        "Quoc Truong",
+                        "Marian Truong-Lensen",
+                        "23-21 21-18",
+                        "home"
+                    ]
+                ]
+            },
+            "players": "Dennis, Hurly, Pim, Chloe, Ilse"
+        },
+        {
+            "division": "5e divisie",
+            "name": "Hillegom BC 3",
+            "table": [
+                {
+                    "rank": "1",
+                    "team": "Martinus a veen 5",
+                    "points": "34",
+                    "played": "6"
+                },
+                {
+                    "rank": "2",
+                    "team": "Bacluvo 1",
+                    "points": "30",
+                    "played": "4"
+                },
+                {
+                    "rank": "3",
+                    "team": "Vennewater t 8",
+                    "points": "27",
+                    "played": "4"
+                },
+                {
+                    "rank": "4",
+                    "team": "Hillegom bc 3",
+                    "points": "20",
+                    "played": "6"
+                },
+                {
+                    "rank": "5",
+                    "team": "Almere  bv 10",
+                    "points": "14",
+                    "played": "4"
+                },
+                {
+                    "rank": "6",
+                    "team": "Meershuttle bc 6",
+                    "points": "14",
+                    "played": "6"
+                },
+                {
+                    "rank": "7",
+                    "team": "Zijderveld bv van 7",
+                    "points": "11",
+                    "played": "5"
+                },
+                {
+                    "rank": "8",
+                    "team": "Noordwijkerhout bk 1",
+                    "points": "10",
+                    "played": "5"
+                }
+            ],
+            "next": {
+                "time": "zo 11-11-2018 14:00",
+                "home": "Zijderveld",
+                "away": "Hillegom",
+                "score": "",
+                "locationid": "525",
+                "gameid": "2815"
+            },
+            "last": {
+                "time": "ma 29-10-2018 19:30",
+                "home": "Bacluvo",
+                "away": "Hillegom",
+                "score": "8-0",
+                "locationid": "39",
+                "gameid": "2811",
+                "games": [
+                    [
+                        "MD",
+                        "Geert Verhave",
+                        "Daan Zandbergen",
+                        "Tom Nieuwenhuizen",
+                        "Robin Groenendijk",
+                        "21-19 21-16",
+                        "home"
+                    ],
+                    [
+                        "VD",
+                        "Martine Verhave",
+                        "Michaela de Mooij",
+                        "Manon Meijvogel",
+                        "Jolanda Nieuwenhuizen",
+                        "21-16 21-14",
+                        "home"
+                    ],
+                    [
+                        "ME1",
+                        "Daan Zandbergen",
+                        "Thomas van der Lans",
+                        "21-16 21-13",
+                        "home"
+                    ],
+                    [
+                        "VE1",
+                        "Martine Verhave",
+                        "Eline Witteman",
+                        "21-7 21-4",
+                        "home"
+                    ],
+                    [
+                        "ME2",
+                        "Koen Oosthoek",
+                        "Robin Groenendijk",
+                        "21-16 23-21",
+                        "home"
+                    ],
+                    [
+                        "VE2",
+                        "Michaela de Mooij",
+                        "Manon Meijvogel",
+                        "21-16 21-17",
+                        "home"
+                    ],
+                    [
+                        "GD1",
+                        "Geert Verhave",
+                        "Martine Verhave",
+                        "Thomas van der Lans",
+                        "Eline Witteman",
+                        "21-16 21-11",
+                        "home"
+                    ],
+                    [
+                        "GD2",
+                        "Koen Oosthoek",
+                        "Michaela de Mooij",
+                        "Robin Groenendijk",
+                        "Jolanda Nieuwenhuizen",
+                        "12-21 22-20 21-6",
+                        "home"
+                    ]
+                ]
+            },
+            "players": "Robin, Thomas, Tom, Manon, Jolanda, Eline"
+        },
+        {
+            "division": "5e divisie",
+            "name": "Hillegom BC 4",
+            "table": [
+                {
+                    "rank": "1",
+                    "team": "Weesp bc 2",
+                    "points": "33",
+                    "played": "6"
+                },
+                {
+                    "rank": "2",
+                    "team": "Hillegom bc 4",
+                    "points": "33",
+                    "played": "6"
+                },
+                {
+                    "rank": "3",
+                    "team": "Vennewater t 7",
+                    "points": "30",
+                    "played": "6"
+                },
+                {
+                    "rank": "4",
+                    "team": "Almere bv 15",
+                    "points": "20",
+                    "played": "5"
+                },
+                {
+                    "rank": "5",
+                    "team": "Us bc 3",
+                    "points": "19",
+                    "played": "6"
+                },
+                {
+                    "rank": "6",
+                    "team": "Zijderveld bv van 6",
+                    "points": "18",
+                    "played": "5"
+                },
+                {
+                    "rank": "7",
+                    "team": "Martinus a veen 6",
+                    "points": "15",
+                    "played": "5"
+                },
+                {
+                    "rank": "8",
+                    "team": "Meershuttle bc 5",
+                    "points": "8",
+                    "played": "5"
+                }
+            ],
+            "next": {
+                "time": "za 17-11-2018 19:00",
+                "home": "Almere",
+                "away": "Hillegom",
+                "score": "",
+                "locationid": "13",
+                "gameid": "2703"
+            },
+            "last": {
+                "time": "zo 4-11-2018 10:00",
+                "home": "Hillegom",
+                "away": "Martinus",
+                "score": "6-2",
+                "locationid": "210",
+                "gameid": "2739",
+                "games": [
+                    [
+                        "MD",
+                        "Jordi van Kampen",
+                        "Ben Groenendijk",
+                        "Bas Borgs",
+                        "Björn Klaassen Bos",
+                        "21-9 21-18",
+                        "home"
+                    ],
+                    [
+                        "VD",
+                        "Esther Holtrop",
+                        "Merel Heijman",
+                        "Anne Vriens",
+                        "Bianca Hoebeke",
+                        "21-12 11-21 21-19",
+                        "home"
+                    ],
+                    [
+                        "ME1",
+                        "Rick Clemens",
+                        "Bas Borgs",
+                        "21-16 21-12",
+                        "home"
+                    ],
+                    [
+                        "VE1",
+                        "Fabiënne Malonda",
+                        "Anne Vriens",
+                        "21-17 21-17",
+                        "home"
+                    ],
+                    [
+                        "ME2",
+                        "Ben Groenendijk",
+                        "Carsten Dissel",
+                        "21-13 21-7",
+                        "home"
+                    ],
+                    [
+                        "VE2",
+                        "Merel Heijman",
+                        "Bianca Hoebeke",
+                        "19-21 19-21",
+                        "away"
+                    ],
+                    [
+                        "GD1",
+                        "Jordi van Kampen",
+                        "Esther Holtrop",
+                        "Bianca Hoebeke",
+                        "Carsten Dissel",
+                        "16-21 21-17 15-21",
+                        "away"
+                    ],
+                    [
+                        "GD2",
+                        "Rick Clemens",
+                        "Fabiënne Malonda",
+                        "Anne Vriens",
+                        "Björn Klaassen Bos",
+                        "21-7 21-10",
+                        "home"
+                    ]
+                ]
+            },
+            "players": "Rick, Ben, Jordi, Merel, Esther, Fabiënne"
+        },
+        {
+            "division": "5e divisie",
+            "name": "Hillegom BC 5",
+            "table": [
+                {
+                    "rank": "1",
+                    "team": "Us bc 2",
+                    "points": "41",
+                    "played": "6"
+                },
+                {
+                    "rank": "2",
+                    "team": "Amsterdam bv 1",
+                    "points": "23",
+                    "played": "6"
+                },
+                {
+                    "rank": "3",
+                    "team": "Duinwijck bc 12",
+                    "points": "22",
+                    "played": "5"
+                },
+                {
+                    "rank": "4",
+                    "team": "Meershuttle bc 4",
+                    "points": "21",
+                    "played": "5"
+                },
+                {
+                    "rank": "5",
+                    "team": "Hillegom bc 5",
+                    "points": "21",
+                    "played": "5"
+                },
+                {
+                    "rank": "6",
+                    "team": "Vennewater t 6",
+                    "points": "16",
+                    "played": "5"
+                },
+                {
+                    "rank": "7",
+                    "team": "Top flight bc 1",
+                    "points": "16",
+                    "played": "5"
+                },
+                {
+                    "rank": "8",
+                    "team": "Velsen bc 2",
+                    "points": "8",
+                    "played": "5"
+                }
+            ],
+            "next": {
+                "time": "zo 11-11-2018 13:00",
+                "home": "Top",
+                "away": "Hillegom",
+                "score": "",
+                "locationid": "451",
+                "gameid": "2661"
+            },
+            "last": {
+                "time": "za 3-11-2018 19:00",
+                "home": "Meershuttle",
+                "away": "Hillegom",
+                "score": "4-4",
+                "locationid": "537",
+                "gameid": "2664",
+                "games": [
+                    [
+                        "MD",
+                        "Fred van Bloemendaal",
+                        "Mark van der Tang",
+                        "Dennis Strobbe",
+                        "Herman Bijl",
+                        "21-19 14-21 18-21",
+                        "away"
+                    ],
+                    [
+                        "VD",
+                        "Shirley Kaijzel",
+                        "Faisca Fransz",
+                        "Nicolette Groen - Wassenaar",
+                        "Lisa Heijman",
+                        "16-21 15-21",
+                        "away"
+                    ],
+                    [
+                        "ME1",
+                        "Davey Vork",
+                        "Dennis Strobbe",
+                        "21-17 12-21 21-16",
+                        "home"
+                    ],
+                    [
+                        "VE1",
+                        "Shirley Kaijzel",
+                        "Lisa Heijman",
+                        "21-13 21-10",
+                        "home"
+                    ],
+                    [
+                        "ME2",
+                        "Mark van der Tang",
+                        "Ed Barten",
+                        "21-15 21-16",
+                        "home"
+                    ],
+                    [
+                        "VE2",
+                        "Faisca Fransz",
+                        "Nicolette Groen - Wassenaar",
+                        "16-21 18-21",
+                        "away"
+                    ],
+                    [
+                        "GD1",
+                        "Fred van Bloemendaal",
+                        "Shirley Kaijzel",
+                        "Herman Bijl",
+                        "Nicolette Groen - Wassenaar",
+                        "21-19 18-21 12-21",
+                        "away"
+                    ],
+                    [
+                        "GD2",
+                        "Davey Vork",
+                        "Faisca Fransz",
+                        "Ed Barten",
+                        "Lisa Heijman",
+                        "21-12 21-17",
+                        "home"
+                    ]
+                ]
+            },
+            "players": "Ed, Herman, Dennis, Marieke, Lisa"
+        },
+        {
+            "division": "6e divisie",
+            "name": "Hillegom BC 6",
+            "table": [
+                {
+                    "rank": "1",
+                    "team": "Bios bc 1",
+                    "points": "26",
+                    "played": "4"
+                },
+                {
+                    "rank": "2",
+                    "team": "Hillegom bc 6",
+                    "points": "23",
+                    "played": "3"
+                },
+                {
+                    "rank": "3",
+                    "team": "Katwijkse bc 1",
+                    "points": "21",
+                    "played": "4"
+                },
+                {
+                    "rank": "4",
+                    "team": "Meershuttle bc 7",
+                    "points": "18",
+                    "played": "5"
+                },
+                {
+                    "rank": "5",
+                    "team": "Duinwijck bc 13",
+                    "points": "13",
+                    "played": "4"
+                },
+                {
+                    "rank": "6",
+                    "team": "Ijmond bc 5",
+                    "points": "12",
+                    "played": "5"
+                },
+                {
+                    "rank": "7",
+                    "team": "Wijk aan zee 1",
+                    "points": "7",
+                    "played": "5"
+                }
+            ],
+            "next": {
+                "time": "za 10-11-2018 14:00",
+                "home": "Duinwijck",
+                "away": "Hillegom",
+                "score": "",
+                "locationid": "132",
+                "gameid": "4709"
+            },
+            "last": {
+                "time": "zo 4-11-2018 13:00",
+                "home": "Meershuttle",
+                "away": "Hillegom",
+                "score": "1-7",
+                "locationid": "537",
+                "gameid": "4712",
+                "games": [
+                    [
+                        "MD",
+                        "Johan Holtrust",
+                        "Pieter Visser",
+                        "Robin Hartman",
+                        "Barend Maltha",
+                        "21-19 20-22 14-21",
+                        "away"
+                    ],
+                    [
+                        "VD",
+                        "Denise Groenenberg",
+                        "Sonja van Schooneveld",
+                        "Sandra Diesvelt",
+                        "Ineke Wijdeveld",
+                        "14-21 14-21",
+                        "away"
+                    ],
+                    [
+                        "ME1",
+                        "Pieter Visser",
+                        "Robin Hartman",
+                        "20-22 21-17 13-21",
+                        "away"
+                    ],
+                    [
+                        "VE1",
+                        "Denise Groenenberg",
+                        "Sandra Diesvelt",
+                        "11-21 22-20 21-11",
+                        "home"
+                    ],
+                    [
+                        "ME2",
+                        "Danny Con",
+                        "Barend Maltha",
+                        "23-21 9-21 18-21",
+                        "away"
+                    ],
+                    [
+                        "VE2",
+                        "Sonja van Schooneveld",
+                        "Ineke Wijdeveld",
+                        "14-21 10-21",
+                        "away"
+                    ],
+                    [
+                        "GD1",
+                        "Danny Con",
+                        "Denise Groenenberg",
+                        "Robin Hartman",
+                        "Sandra Diesvelt",
+                        "20-22 16-21",
+                        "away"
+                    ],
+                    [
+                        "GD2",
+                        "Johan Holtrust",
+                        "Sonja van Schooneveld",
+                        "Barend Maltha",
+                        "Ineke Wijdeveld",
+                        "8-21 17-21",
                         "away"
                     ]
                 ]
             },
-            "players": "Derek, van, van, Danique, Miranda, Natasja"
+            "players": "Robin, Frank, Barend, Sandra, Lene"
+        },
+        {
+            "division": "6e divisie",
+            "name": "Hillegom BC 7",
+            "table": [
+                {
+                    "rank": "1",
+                    "team": "Hillegom bc 7",
+                    "points": "24",
+                    "played": "4"
+                },
+                {
+                    "rank": "2",
+                    "team": "Almere bv 17",
+                    "points": "22",
+                    "played": "5"
+                },
+                {
+                    "rank": "3",
+                    "team": "Ijmond bc 4",
+                    "points": "21",
+                    "played": "4"
+                },
+                {
+                    "rank": "4",
+                    "team": "Swish bv 7",
+                    "points": "17",
+                    "played": "4"
+                },
+                {
+                    "rank": "5",
+                    "team": "Slotermeer bv 2",
+                    "points": "16",
+                    "played": "4"
+                },
+                {
+                    "rank": "6",
+                    "team": "Space shuttle bv 1",
+                    "points": "11",
+                    "played": "5"
+                },
+                {
+                    "rank": "7",
+                    "team": "Zijderveld bv van 8",
+                    "points": "9",
+                    "played": "4"
+                }
+            ],
+            "next": {
+                "time": "zo 11-11-2018 14:00",
+                "home": "Zijderveld",
+                "away": "Hillegom",
+                "score": "",
+                "locationid": "525",
+                "gameid": "4639"
+            },
+            "last": {
+                "time": "zo 4-11-2018 10:00",
+                "home": "Hillegom",
+                "away": "Almere",
+                "score": "5-3",
+                "locationid": "210",
+                "gameid": "4648",
+                "games": [
+                    [
+                        "MD",
+                        "Sander van Wickeren",
+                        "Bryan van Rijn",
+                        "Roel Odijk",
+                        "Kas Sacranie",
+                        "21-9 21-7",
+                        "home"
+                    ],
+                    [
+                        "VD",
+                        "Danique Barten",
+                        "Miranda Huurman",
+                        "Fay Cornet",
+                        "Megan Pardi",
+                        "18-21 21-10 10-21",
+                        "away"
+                    ],
+                    [
+                        "ME1",
+                        "Derek Bakker",
+                        "Alexander Witsel",
+                        "21-12 21-17",
+                        "home"
+                    ],
+                    [
+                        "VE1",
+                        "Danique Barten",
+                        "Fay Cornet",
+                        "12-21 17-21",
+                        "away"
+                    ],
+                    [
+                        "ME2",
+                        "Bryan van Rijn",
+                        "Roel Odijk",
+                        "21-10 21-17",
+                        "home"
+                    ],
+                    [
+                        "VE2",
+                        "Natasja Woudstra",
+                        "Megan Pardi",
+                        "14-21 18-21",
+                        "away"
+                    ],
+                    [
+                        "GD1",
+                        "Miranda Huurman",
+                        "Sander van Wickeren",
+                        "Fay Cornet",
+                        "Alexander Witsel",
+                        "21-15 21-14",
+                        "home"
+                    ],
+                    [
+                        "GD2",
+                        "Natasja Woudstra",
+                        "Derek Bakker",
+                        "Megan Pardi",
+                        "Kas Sacranie",
+                        "21-17 21-11",
+                        "home"
+                    ]
+                ]
+            },
+            "players": "Derek, Bryan, Sander, Danique, Miranda, Natasja"
+        },
+        {
+            "division": "8e divisie",
+            "name": "Hillegom BC 9",
+            "table": [
+                {
+                    "rank": "1",
+                    "team": "Mix bc 10",
+                    "points": "32",
+                    "played": "6"
+                },
+                {
+                    "rank": "2",
+                    "team": "Evbc vlietwijk 2",
+                    "points": "26",
+                    "played": "4"
+                },
+                {
+                    "rank": "3",
+                    "team": "Maassluis bc 4",
+                    "points": "24",
+                    "played": "4"
+                },
+                {
+                    "rank": "4",
+                    "team": "Hillegom bc 9",
+                    "points": "18",
+                    "played": "5"
+                },
+                {
+                    "rank": "5",
+                    "team": "Valken de 2",
+                    "points": "14",
+                    "played": "4"
+                },
+                {
+                    "rank": "6",
+                    "team": "Boomgaardshoek pbc 5",
+                    "points": "8",
+                    "played": "5"
+                },
+                {
+                    "rank": "7",
+                    "team": "Shuttlewoude bc 4",
+                    "points": "6",
+                    "played": "4"
+                }
+            ],
+            "next": {
+                "time": "ma 5-11-2018 19:00",
+                "home": "Evbc",
+                "away": "Hillegom",
+                "score": "",
+                "locationid": "156",
+                "gameid": "8613"
+            },
+            "last": {
+                "time": "vr 2-11-2018 20:00",
+                "home": "Shuttlewoude",
+                "away": "Hillegom",
+                "score": "4-4",
+                "locationid": "407",
+                "gameid": "8616",
+                "games": [
+                    [
+                        "MD",
+                        "Armando Kartoredjo",
+                        "Martijn Hulsbos",
+                        "Thomas Bakker",
+                        "Pieter Dek",
+                        "13-21 10-21",
+                        "away"
+                    ],
+                    [
+                        "VD",
+                        "Tessa Versteegen",
+                        "Ria Versteegen",
+                        "Loes de Haas",
+                        "Conny vd Spruit",
+                        "21-16 21-15",
+                        "home"
+                    ],
+                    [
+                        "ME1",
+                        "Ton Rijnsburger",
+                        "Jasper Keizer",
+                        "13-21 17-21",
+                        "away"
+                    ],
+                    [
+                        "VE1",
+                        "Alice vd Berg",
+                        "Loes de Haas",
+                        "13-21 21-17 21-19",
+                        "home"
+                    ],
+                    [
+                        "ME2",
+                        "Martijn Hulsbos",
+                        "Thomas Bakker",
+                        "6-21 14-21",
+                        "away"
+                    ],
+                    [
+                        "VE2",
+                        "Tessa Versteegen",
+                        "Conny vd Spruit",
+                        "21-2 21-7",
+                        "home"
+                    ],
+                    [
+                        "GD1",
+                        "Ria Versteegen",
+                        "Armando Kartoredjo",
+                        "Pieter Dek",
+                        "Loes de Haas",
+                        "21-15 17-21 21-19",
+                        "home"
+                    ],
+                    [
+                        "GD2",
+                        "Alice vd Berg",
+                        "Ton Rijnsburger",
+                        "Jasper Keizer",
+                        "Conny vd Spruit",
+                        "21-18 10-21 11-21",
+                        "away"
+                    ]
+                ]
+            },
+            "players": "Thomas, Pieter, Jasper, Loes, Conny"
+        },
+        {
+            "division": "9e divisie",
+            "name": "Hillegom BC 10",
+            "table": [
+                {
+                    "rank": "1",
+                    "team": "Limes bc 13",
+                    "points": "31",
+                    "played": "5"
+                },
+                {
+                    "rank": "2",
+                    "team": "Dynamo sassem 4",
+                    "points": "20",
+                    "played": "3"
+                },
+                {
+                    "rank": "3",
+                    "team": "Hillegom bc 10",
+                    "points": "19",
+                    "played": "5"
+                },
+                {
+                    "rank": "4",
+                    "team": "Merenwiek bc 2",
+                    "points": "17",
+                    "played": "4"
+                },
+                {
+                    "rank": "5",
+                    "team": "Shuttle de 7",
+                    "points": "13",
+                    "played": "4"
+                },
+                {
+                    "rank": "6",
+                    "team": "Olympia haarlem bv 3",
+                    "points": "12",
+                    "played": "5"
+                },
+                {
+                    "rank": "7",
+                    "team": "Nieuwkoop bc 2",
+                    "points": "8",
+                    "played": "4"
+                }
+            ],
+            "next": {
+                "time": "zo 18-11-2018 11:00",
+                "home": "Shuttle",
+                "away": "Hillegom",
+                "score": "",
+                "locationid": "402",
+                "gameid": "9754"
+            },
+            "last": {
+                "time": "vr 2-11-2018 20:00",
+                "home": "Dynamo",
+                "away": "Hillegom",
+                "score": "6-2",
+                "locationid": "134",
+                "gameid": "9755",
+                "games": [
+                    [
+                        "MD",
+                        "Paul Belder",
+                        "Adam Hazell",
+                        "Gert-Jan van Dalen",
+                        "Sjoerd Kralt",
+                        "27-25 21-15",
+                        "home"
+                    ],
+                    [
+                        "VD",
+                        "Marjolijn Oldenhage",
+                        "Sandra Beugelsdijk",
+                        "Roos Bouckaert",
+                        "Martine Groen - Bun",
+                        "21-17 13-21 21-15",
+                        "home"
+                    ],
+                    [
+                        "ME1",
+                        "Adam Hazell",
+                        "Sjoerd Kralt",
+                        "12-21 16-21",
+                        "away"
+                    ],
+                    [
+                        "VE1",
+                        "Hannah Hazell",
+                        "Emma Koopstra",
+                        "21-12 21-11",
+                        "home"
+                    ],
+                    [
+                        "ME2",
+                        "Paul Belder",
+                        "Gert-Jan van Dalen",
+                        "21-11 21-11",
+                        "home"
+                    ],
+                    [
+                        "VE2",
+                        "Marjolijn Oldenhage",
+                        "Roos Bouckaert",
+                        "5-21 12-21",
+                        "away"
+                    ],
+                    [
+                        "GD1",
+                        "Adam Hazell",
+                        "Sandra Beugelsdijk",
+                        "Sjoerd Kralt",
+                        "Emma Koopstra",
+                        "22-20 21-13",
+                        "home"
+                    ],
+                    [
+                        "GD2",
+                        "Paul Belder",
+                        "Hannah Hazell",
+                        "Gert-Jan van Dalen",
+                        "Martine Groen - Bun",
+                        "21-18 21-10",
+                        "home"
+                    ]
+                ]
+            },
+            "players": "Gert-Jan, Arjan, Sjoerd, Roos, Martine, Emma"
         }
     ]
 }
