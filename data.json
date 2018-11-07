@@ -138,6 +138,143 @@
             "players": "Dennis, Hurly, Pim, Chloe, Ilse"
         },
         {
+            "division": "4e divisie",
+            "name": "Hillegom BC 2",
+            "table": [
+                {
+                    "rank": "1",
+                    "team": "Duinwijck bc 8",
+                    "points": "35",
+                    "played": "5"
+                },
+                {
+                    "rank": "2",
+                    "team": "Matchpoint 1",
+                    "points": "31",
+                    "played": "5"
+                },
+                {
+                    "rank": "3",
+                    "team": "Hillegom bc 2",
+                    "points": "26",
+                    "played": "7"
+                },
+                {
+                    "rank": "4",
+                    "team": "Vennewater t 3",
+                    "points": "19",
+                    "played": "6"
+                },
+                {
+                    "rank": "5",
+                    "team": "Swish bv 2",
+                    "points": "18",
+                    "played": "6"
+                },
+                {
+                    "rank": "6",
+                    "team": "Olympia haarlem bv 1",
+                    "points": "16",
+                    "played": "5"
+                },
+                {
+                    "rank": "7",
+                    "team": "Heemskerk bc 1",
+                    "points": "15",
+                    "played": "5"
+                },
+                {
+                    "rank": "8",
+                    "team": "Slotermeer bv 1",
+                    "points": "15",
+                    "played": "5"
+                }
+            ],
+            "next": {
+                "time": "zo 18-11-2018 09:30",
+                "home": "Heemskerk",
+                "away": "Hillegom",
+                "score": "",
+                "locationid": "201",
+                "gameid": "1391"
+            },
+            "last": {
+                "time": "zo 4-11-2018 10:00",
+                "home": "Hillegom",
+                "away": "Olympia",
+                "score": "6-1",
+                "locationid": "210",
+                "gameid": "1371",
+                "games": [
+                    [
+                        "MD",
+                        "Edwin Groenendijk",
+                        "Stephan Niewold",
+                        "Stefan Payralbe",
+                        "Tjun-Ming Wong",
+                        "21-17 21-19",
+                        "home"
+                    ],
+                    [
+                        "VD",
+                        "Cynthia van der Slot",
+                        "Marjolein Zwetsloot-De Jonge",
+                        "Arianne Abbestee",
+                        "Michelle Geerts",
+                        "23-21 27-25",
+                        "home"
+                    ],
+                    [
+                        "ME1",
+                        "Dennis den Blanken",
+                        "Tjun-Ming Wong",
+                        "17-21 21-19 21-5",
+                        "home"
+                    ],
+                    [
+                        "VE1",
+                        "Marjolein Zwetsloot-De Jonge",
+                        "Arianne Abbestee",
+                        "18-21 15-21",
+                        "away"
+                    ],
+                    [
+                        "ME2",
+                        "Stephan Niewold",
+                        "Stefan Payralbe",
+                        "21-17 17-21 22-20",
+                        "home"
+                    ],
+                    [
+                        "VE2",
+                        "Cynthia van der Slot",
+                        "Michelle Geerts",
+                        "21-14 21-13",
+                        "home"
+                    ],
+                    [
+                        "GD1",
+                        "Cynthia van der Slot",
+                        "Dennis den Blanken",
+                        "Tjun-Ming Wong",
+                        "Arianne Abbestee",
+                        "21-11 21-9",
+                        "home"
+                    ],
+                    [
+                        "GD2",
+                        "Marjolein Zwetsloot-De Jonge",
+                        "Edwin Groenendijk",
+                        "Stefan Payralbe",
+                        "Michelle Geerts",
+                        "24-22 10-21 Niet gespeeld, wedstrijd gestaakt",
+                        "undecided"
+                    ]
+                ]
+            },
+            "players": "Dennis, Edwin, Stephan, Cynthia, Myrthe, Marjolein"
+        },
+        {
             "division": "5e divisie",
             "name": "Hillegom BC 3",
             "table": [
@@ -809,6 +946,143 @@
                 ]
             },
             "players": "Derek, Bryan, Sander, Danique, Miranda, Natasja"
+        },
+        {
+            "division": "7e divisie",
+            "name": "Hillegom BC 8",
+            "table": [
+                {
+                    "rank": "1",
+                    "team": "Valken de 1",
+                    "points": "35",
+                    "played": "6"
+                },
+                {
+                    "rank": "2",
+                    "team": "Floriande bv 2",
+                    "points": "34",
+                    "played": "5"
+                },
+                {
+                    "rank": "3",
+                    "team": "Dynamo sassem 3",
+                    "points": "32",
+                    "played": "6"
+                },
+                {
+                    "rank": "4",
+                    "team": "Hillegom bc 8",
+                    "points": "23",
+                    "played": "6"
+                },
+                {
+                    "rank": "5",
+                    "team": "Kwakel de bv 3",
+                    "points": "21",
+                    "played": "5"
+                },
+                {
+                    "rank": "6",
+                    "team": "Space shuttle bv 2",
+                    "points": "12",
+                    "played": "5"
+                },
+                {
+                    "rank": "7",
+                    "team": "Heemskerk bc 4",
+                    "points": "8",
+                    "played": "5"
+                },
+                {
+                    "rank": "8",
+                    "team": "Olympia haarlem bv 2",
+                    "points": "2",
+                    "played": "4"
+                }
+            ],
+            "next": {
+                "time": "vr 16-11-2018 20:00",
+                "home": "Hillegom",
+                "away": "Olympia",
+                "score": "",
+                "locationid": "210",
+                "gameid": "5652"
+            },
+            "last": {
+                "time": "zo 4-11-2018 10:00",
+                "home": "Hillegom",
+                "away": "Floriande",
+                "score": "1-6",
+                "locationid": "210",
+                "gameid": "5659",
+                "games": [
+                    [
+                        "MD",
+                        "Marcel Clemens",
+                        "Mitchel Maarschalk",
+                        "Melvin Ros",
+                        "Jeffrey den Hartog",
+                        "9-21 21-18 14-21",
+                        "away"
+                    ],
+                    [
+                        "VD",
+                        "Denise Oudshoorn",
+                        "Kirsten Dedel",
+                        "Lindsay Gabriël",
+                        "Ien de Queljoe",
+                        "18-21 22-20 21-16",
+                        "home"
+                    ],
+                    [
+                        "ME1",
+                        "Jelle van der Voort",
+                        "Jeffrey den Hartog",
+                        "23-21 22-24 18-21",
+                        "away"
+                    ],
+                    [
+                        "VE1",
+                        "Denise Oudshoorn",
+                        "Ien de Queljoe",
+                        "15-21 15-21",
+                        "away"
+                    ],
+                    [
+                        "ME2",
+                        "Mitchel Maarschalk",
+                        "Melvin Ros",
+                        "21-18 14-21 14-21",
+                        "away"
+                    ],
+                    [
+                        "VE2",
+                        "Kirsten Dedel",
+                        "Lindsay Gabriël",
+                        "21-23 14-21",
+                        "away"
+                    ],
+                    [
+                        "GD1",
+                        "Kirsten Dedel",
+                        "Marcel Clemens",
+                        "Melvin Ros",
+                        "Ien de Queljoe",
+                        "9-21 11-21",
+                        "away"
+                    ],
+                    [
+                        "GD2",
+                        "Denise Oudshoorn",
+                        "Jelle van der Voort",
+                        "Lindsay Gabriël",
+                        "Jeffrey den Hartog",
+                        "21-18 21-23 Niet gespeeld, wedstrijd gestaakt",
+                        "undecided"
+                    ]
+                ]
+            },
+            "players": "Marcel, Mitchel, Jelle, Kirsten, Denise"
         },
         {
             "division": "8e divisie",

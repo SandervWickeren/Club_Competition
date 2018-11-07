@@ -55,9 +55,17 @@ def strip_match_col(rows):
     away = lower_layout(rows.findAll('a', {"class":"teamname"})[1].get_text())
     
     # Retrieves location id
-    location_link = rows.findAll('a')[-1]['href']
-    regexl = re.search("lid=[\d]+", str(location_link))
-    locID = regexl.group().split("=")[-1]
+    location_link = rows.findAll('a')[2]['href']
+    locID = 0
+    
+    try:
+        regexl = re.search("lid=[\d]+", str(location_link))
+        locID = regexl.group().split("=")[-1]
+    except:
+        location_link = rows.findAll('a')[-2]['href']
+        regexl = re.search("lid=[\d]+", str(location_link))
+        locID = regexl.group().split("=")[-1]
+        print(location_link)
     
     # Retrieves game id
     regex = re.search("match=[\d]+", str(rows))
@@ -175,7 +183,10 @@ def get_game_info(soup):
                 game = [temp[0], temp[2]] + temp[-2:]
             
             # Calculate winner per match
-            game.append(who_wins(temp[-1]))
+            try:
+                game.append(who_wins(temp[-1]))
+            except:
+                game.append("undecided")
             
             games.append(game)
     return games
@@ -274,11 +285,14 @@ def start(teamInfo):
 
     for team in teamInfo:
         print("Busy with team: %s --" % team, round(time.clock() - start_time, 2), "seconds passed so far.")
-        try:
-            teamdata = init_data(team)
-            total.append(teamdata)
-        except Exception as e:
-            print ("Error on team %s:" % team, e)
+        # try:
+        #     teamdata = init_data(team)
+        #     total.append(teamdata)
+        # except Exception as e:
+        #     print ("Error on team %s:" % team, e)
+
+        teamdata = init_data(team)
+        total.append(teamdata)
 
     print("Dumping into json file..")
     data = ({"Teams": total})
@@ -297,7 +311,7 @@ seasonID = "F3C6D619-32F6-4C2A-8506-798D7493D668"
 baseLink = "https://badmintonnederland.toernooi.nl/sport/"
 teamInfo = [[499, 23], [500, 22], [501, 44], [502, 43], [503, 42], [504, 74],
             [505, 73], [506, 89], [507, 135], [508, 153]]
-# teamInfo = [[499, 23]]
+#teamInfo = [[500, 22]]
 
 def craftTeamLink(info, seasonID, teamID):
     baseLink = "https://badmintonnederland.toernooi.nl/sport/"
