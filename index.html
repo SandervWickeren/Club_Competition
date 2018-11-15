@@ -2,6 +2,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=600">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
@@ -47,7 +48,7 @@ function genFramework(obj) {
     html += '</p><p class="teamdivision">' + obj['division'] + ' - <span id="teammembers"> ';
 
     // Table html
-    html += obj['players'] + '</span></p></div><button class="collapsible open"><p class="teamdivision">Stand:</p>Plek x<div class="fas fa-chevron-up rotate arrowHolder">' +
+    html += obj['players'] + '</span></p></div><button class="collapsible open"><p class="teamdivision">Stand:</p>Plek ' + obj['teamrank'] + '<div class="fas fa-chevron-up rotate arrowHolder">' +
     '</div></button><div class="content"><div class="content-inside"><div class="table">' + genTable(obj["table"]) + '</div></div></div>';
 
     // Last game
